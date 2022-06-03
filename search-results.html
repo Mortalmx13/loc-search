@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOC Search</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <section class="row">
+    <aside class="col-12 col-md-3 p-4 bg-dark text-light">
+      <form id="loc-search-form">
+        <fieldset>
+          <legend>LOC Search</legend>
+          <div class="mb-3">
+            <label for="q" class="form-label">Search</label>
+            <input type="text" id="q" name="q" class="form-control" placeholder="Search">
+          </div>
+          <div class="mb-3">
+            <label for="format" class="form-label">Select Format</label>
+            <select id="format" name="format" class="form-select">
+              <option></option>
+              <option>maps</option>
+              <option>audio</option>
+              <option>photos</option>
+              <option>manuscripts</option>
+              <option>newspapers</option>
+              <option>film-and-videos</option>
+              <option>notated-music</option>
+              <option>websites</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-light text-dark">Submit</button>
+        </fieldset>
+      </form>
+    </aside>
+    <main class="col-12 col-md-9 p-4 bg-light text-dark">
+      <h2>Search Results</h2>
+      <section id="search-results">
+        <article class="card p-3 bg-dark text-light">
+          <h3>Story Title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex, quisquam quasi aliquam iste nihil temporibus inventore unde, itaque sapiente error nesciunt nostrum modi. Ducimus placeat repellat voluptatibus adipisci rerum.</p>
+          <button class="btn btn-light text-dark">Learn More</button>
+        </article>
+      </section>
+    </main>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>
